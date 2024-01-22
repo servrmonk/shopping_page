@@ -41,3 +41,8 @@ Fat Reducers vs Fat Components vs Fat Actions : Where should our logic (code) go
 than we have to differentiate bw synchronous ,side-effect free code (i.e data transformations) and Async code or code with side-effect
 
 Prefer Reducer Avoid actions creators or components
+
+uses of action creators: 
+we get action creator from redux toolkit 
+thunks:
+What is a Thunk : thunk is simply a function that delays an action until later -> an action creator funciton that does not return the action itself but another funciton which eventually returns the action 
