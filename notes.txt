@@ -1,5 +1,6 @@
 Advance Redux
 
+
 handling async tasks with redux
 
 where to put our code
@@ -16,3 +17,27 @@ Reducer must be pure, side effect free synchronous functions
 input (Old state + Action) -> Output(New State)
 
 where should side effect and async tasks be executed : ans is where to put side effect is inside the component ex useEffect,or inside action creators
+
+async fun should not be inside the reducer function
+
+we have 2 main option simply execute in component and inside the action creators
+
+
+
+frontend code depends on backend code 
+
+Backend API talking to frontend apk with http req
+
+if we don't have backend api that does a lot of work -> send data and receive + use response
+
+
+
+firebase : does not a lot of work (i.e just stores incoming data )we do have to do more work on frontend we have to transform data and send data (i.e. more code on the frontend , ahead of the reducer)
+
+
+modified code : https://github.com/academind/react-complete-guide-code/tree/19-advanced-redux/code/zz-suboptimal-example-code/src
+
+Fat Reducers vs Fat Components vs Fat Actions : Where should our logic (code) go?
+than we have to differentiate bw synchronous ,side-effect free code (i.e data transformations) and Async code or code with side-effect
+
+Prefer Reducer Avoid actions creators or components
