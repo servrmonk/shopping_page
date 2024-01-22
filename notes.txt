@@ -1,0 +1,18 @@
+Advance Redux
+
+handling async tasks with redux
+
+where to put our code
+
+the redux devtool
+
+
+
+Video Notes
+Side Effects,async tasks and redux
+
+Reducer must be pure, side effect free synchronous functions
+
+input (Old state + Action) -> Output(New State)
+
+where should side effect and async tasks be executed : ans is where to put side effect is inside the component ex useEffect,or inside action creators
